@@ -48,7 +48,7 @@ const Header = () => {
             whileHover={{ scale: 1.08 }}
             className="text-2xl font-extrabold text-blue-700 dark:text-yellow-400 tracking-tight drop-shadow-md select-none"
           >
-            Bhushan
+            Portfolio
           </motion.div>
 
           {/* Desktop Navigation */}

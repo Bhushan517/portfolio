@@ -2,6 +2,7 @@ import React from 'react';
 // eslint-disable-next-line
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Sparkles, Code, Zap } from 'lucide-react';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
   const scrollToWork = () => {
@@ -94,7 +95,7 @@ const Hero = () => {
               transition={{ delay: 0.7 }}
               className="text-lg sm:text-xl font-medium text-blue-500 dark:text-yellow-400 mb-2 animate-pulse"
             >
-              Turning ideas into reality
+            
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -103,8 +104,16 @@ const Hero = () => {
               className="text-2xl sm:text-3xl text-gray-600 dark:text-gray-200 space-y-2"
             >
               <span className="text-blue-600 dark:text-yellow-400 font-semibold flex items-center justify-center lg:justify-start gap-2">
-                <Code className="w-6 h-6" />
-                Full Stack Developer
+                {/* <Code className="w-6 h-6" /> */}
+                <Typewriter
+                words={['Turning ideas into reality', 'Full Stack Developer', ' I Am React expert' , 'I Am Node.js expert']}
+                loop={0}
+                // cursor
+                cursorStyle='|'
+                typeSpeed={60}
+                deleteSpeed={40}
+                delaySpeed={1500}
+              />
               </span>
               {/* <br /> */}
               {/* <span className="text-gray-500 flex items-center justify-center lg:justify-start gap-2">
